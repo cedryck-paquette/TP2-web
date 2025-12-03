@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="fr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>TP2</title>
+    <link rel="stylesheet" href="css/normalize.css" />
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/formulaire.css" />
+    <link rel="stylesheet" href="css/parts.css" />
+    <link rel="stylesheet" href="css/fonts.css" />
+  </head>
+  <body>
+    <div>
+      <header class="entete centre">
+        <h1>TP2 / Lab-8</h1>
+        <label class="bouton__nav" for="chk-burger"><img class="burger" src="https://s2.svgbox.net/hero-outline.svg?ic=menu" alt="burger" height="20px" width="20px" /></label>
+        <input type="checkbox" name="" id="chk-burger" />
+        <nav class="navigation">
+          <a href="#accueil">Accueil</a>
+          <a href="#inscription">Inscription</a>
+          <a href="#stats">Statistiques</a>
+          <a href="#article">Article</a>
+          <a href="#video">Vidéo</a>
+          <a href="#galerie">Galerie</a>
+        </nav>
+        <h2>Sous-titre</h2>
+        <h3>Auteur: Cedryck Paquette</h3>
+        <p>Ceci est le Lab8, qui correspond à l'avancement du TP2 en date du 26 novembre</p>
+        <nav class="bouton__inscription"><a href="#inscription">inscription</a></nav>
+      </header>
+    </div>
+    <div>
+      <section id="accueil" class="un centre">
+        <h1>Accueil</h1>
+        <a href="#">Accueil</a>
+      </section>
+    </div>
+    <div>
+      <section id="inscription" class="deux centre">
+        <h1>Inscription</h1>
+        <a href="#">Accueil</a>
+        <form class="formulaire">
+          <div class="formulaire__div">
+            <label for="txtNom" class="formulaire__input">Nom</label>
+            <input type="text" id="txtNom" class="formulaire__input" placeholder="Entrez votre nom" />
+          </div>
+          <div class="formulaire__div">
+            <label for="txtPrenom" class="formulaire__input">Prénom</label>
+            <input type="text" id="txtPrenom" class="formulaire__input" placeholder="Entrez votre prénom" />
+          </div>
+          <div class="formulaire__div">
+            <label for="txtCourriel" class="formulaire__input">Courriel</label>
+            <input type="email" id="txtCourriel" class="formulaire__input" placeholder="Entrez votre adresse courriel" />
+          </div>
+          <div class="formulaire__div">
+            <p>Selectionner le type de forfait</p>
+            <label for="radForfait1">Forfait 1</label>
+            <input type="radio" name="forfait" id="radForfait1" />
+            <label for="radForfait2">Forfait 2</label>
+            <input type="radio" name="forfait" id="radForfait2" />
+            <label for="radForfait3">Forfait 3</label>
+            <input type="radio" name="forfait" id="radForfait3" />
+          </div>
+          <input type="submit" value="Valider" />
+        </form>
+      </section>
+    </div>
+    <div>
+      <section id="stats" class="trois centre">
+        <h1>Statistiques</h1>
+        <a href="#">Accueil</a>
+        <table>
+          <caption>
+            Statistiques des 5 dernières saisons
+          </caption>
+          <thead>
+            <tr>
+              <th>Saison</th>
+              <th>W</th>
+              <th>L</th>
+              <th>OTL</th>
+              <th>Pts</th>
+              <th>Rang LNH</th>
+              <th>Meilleur Pointeur</th>
+              <th>Meilleur Buteur</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <th>2024-25</th>
+              <th>40</th>
+              <th>31</th>
+              <th>11</th>
+              <th>91</th>
+              <th>17e</th>
+              <th>Nick Suzuki (89)</th>
+              <th>Cole Caufield (37)</th>
+            </tr>
+            <tr>
+              <th>2023-24</th>
+              <th>30</th>
+              <th>36</th>
+              <th>16</th>
+              <th>76</th>
+              <th>28e</th>
+              <th>Nick Suzuki (77)</th>
+              <th>Nick Suzuki (33)</th>
+            </tr>
+            <tr>
+              <th>2022-23</th>
+              <th>31</th>
+              <th>45</th>
+              <th>6</th>
+              <th>60</th>
+              <th>28e</th>
+              <th>Nick Suzuki (66)</th>
+              <th>Nick Suzuki & Cole Caufield (26)</th>
+            </tr>
+            <tr>
+              <th>2021-22</th>
+              <th>22</th>
+              <th>49</th>
+              <th>11</th>
+              <th>55</th>
+              <th>32e</th>
+              <th>Nick Suzuki (61)</th>
+              <th>Cole Caufield (23)</th>
+            </tr>
+            <tr>
+              <th>2020-21</th>
+              <th>24</th>
+              <th>21</th>
+              <th>11</th>
+              <th>59</th>
+              <th>18e</th>
+              <th>Tyler Toffoli (44)</th>
+              <th>Tyler Toffoli (28)</th>
+            </tr>
+          </tbody>
+        </table>
+      </section>
+    </div>
+    <div>
+      <section id="article" class="quatre centre">
+        <h1>Article</h1>
+        <a href="#">Accueil</a>
+      </section>
+    </div>
+    <div>
+      <section id="video" class="quatre centre">
+        <h1>Vidéo</h1>
+        <a href="#">Accueil</a>
+      </section>
+    </div>
+    <div>
+      <section id="galerie" class="quatre centre">
+        <h1>Galerie</h1>
+        <a href="#">Accueil</a>
+      </section>
+    </div>
+    <footer>
+      <div class="colonne__pied">
+        <h1 class="titre__footer">Le Centre Bell</h1>
+        <p class="texte__footer">1909 Avenue des Canadiens-de-Montréal</p>
+        <p class="texte__footer">Montréal</p>
+        <p class="texte__footer">Montréal, Québec H3B 4C9</p>
+      </div>
+      <div class="colonne__pied">
+        <h1 class="titre__footer">L'équipe</h1>
+        <p class="texte__footer">Capitaine: Nick Suzuki</p>
+        <p class="texte__footer">Assistant-Capitaine: Brendan Gallagher</p>
+        <p class="texte__footer">Assistant-Capitaine: Mike Matheson</p>
+        <a class="texte__footer" href="https://www.nhl.com/fr/canadiens/roster">Alignement Complet</a>
+      </div>
+      <div class="colonne__pied">
+        <h1 class="titre__footer">Mises à jour</h1>
+        <a class="texte__footer" href="https://www.nhl.com/fr/canadiens/schedule">Calendrier</a>
+        <a class="texte__footer" href="https://www.nhl.com/fr/canadiens/news/">Nouvelles</a>
+        <a href="https://www.nhl.com/fr/canadiens/news/topic/jour-de-match/" class="texte__footer">Jour de Match</a>
+      </div>
+    </footer>
+
+    <!-- Charger le polyfill -->
+    <script src="https://unpkg.com/smoothscroll-polyfill/dist/smoothscroll.min.js"></script>
+
+    <!-- Initialisation après chargement -->
+    <script>
+      window.addEventListener("load", function () {
+        if (typeof smoothscroll !== "undefined" && smoothscroll.polyfill) {
+          smoothscroll.polyfill();
+          console.log("✅ Smooth Scroll polyfill activé");
+        } else {
+          console.warn("⚠️ smoothscroll non chargé");
+        }
+      });
+    </script>
+  </body>
+</html>

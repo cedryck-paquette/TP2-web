@@ -1,0 +1,111 @@
+/*GÉNÉRAL*/
+* {
+  box-sizing: border-box;
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande", "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+}
+
+html {
+  scroll-behavior: smooth;
+  font-size: 14px;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: "Faustina";
+}
+.centre {
+  max-width: 1100px;
+  margin: 0 auto;
+  background-color: #ffffff47;
+  padding: 10px;
+}
+/*FONDS SECTIONS*/
+body > div:nth-of-type(1) {
+  background-image: url("../images/tableauIndicateur.jpg");
+  background-size: cover;
+}
+body > div:nth-of-type(odd) {
+  background-color: rgb(0, 20, 168);
+}
+body > div:nth-of-type(even) {
+  background-color: rgb(166, 1, 1);
+}
+h1,
+h2,
+h3 {
+  margin: 0;
+}
+
+/*accueil*/
+header {
+  height: 100vh;
+  color: white;
+}
+
+h1 {
+  margin: 0;
+  padding: 20px;
+}
+
+.bouton__inscription {
+  background-color: rgb(255, 255, 255);
+  display: flex;
+  width: 100px;
+  height: 50px;
+  align-items: center;
+  justify-content: center;
+  transform: scale(1);
+  transition: transform 0.5s;
+}
+
+.bouton__inscription:hover {
+  transform: scale(1.2);
+}
+
+/*sections apres accueil*/
+section {
+  min-height: 100vh;
+}
+figure {
+  margin: 0;
+  padding: 0;
+}
+figure > img {
+  display: block;
+  width: 100%;
+  object-fit: cover;
+}
+
+/*pied de page*/
+footer {
+  height: 500px;
+  width: 100%;
+  background-color: black;
+  display: flex;
+  justify-content: space-between;
+}
+
+.colonne__pied {
+  width: 30%;
+  color: white;
+}
+
+.titre__footer {
+  font-family: "Onest-Bold";
+  font-size: 22px;
+  text-align: center;
+  padding: 15px;
+}
+
+.texte__footer {
+  font-family: "Onest";
+  font-size: 18px;
+  text-align: left;
+  padding-left: 20px;
+  color: white;
+  width: 100%;
+  display: block;
+  margin: 15px;
+  line-height: 30px;
+}
