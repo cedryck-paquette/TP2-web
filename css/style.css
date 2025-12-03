@@ -98,6 +98,7 @@ article {
   justify-content: space-between;
   width: 90%;
   height: 90%;
+  gap: 15px;
 }
 
 .reverse {
