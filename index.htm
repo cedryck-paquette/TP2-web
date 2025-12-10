@@ -13,7 +13,7 @@
   <body>
     <div>
       <header class="entete centre">
-        <h1>TP2 / Lab-9</h1>
+        <h1>TP2 / Lab-10</h1>
         <label class="bouton__nav" for="chk-burger"><img class="burger" src="https://s2.svgbox.net/hero-outline.svg?ic=menu" alt="burger" height="20px" width="20px" /></label>
         <input type="checkbox" name="" id="chk-burger" />
         <nav class="navigation">
@@ -24,17 +24,11 @@
           <a href="#video">Vidéos</a>
           <a href="#galerie">Galerie</a>
         </nav>
-        <h2>Sous-titre</h2>
+        <h2>Les Canadiens de Montréal</h2>
         <h3>Auteur: Cedryck Paquette</h3>
-        <p>Ceci est le Lab9, qui correspond à l'avancement du TP2 en date du 3 decembre</p>
+        <p>Ceci est le Lab10, qui correspond à l'avancement du TP2 en date du 10 decembre</p>
         <nav class="bouton__inscription"><a href="#inscription">inscription</a></nav>
       </header>
-    </div>
-    <div>
-      <section id="accueil" class="un centre">
-        <h1>Accueil</h1>
-        <a href="#">Accueil</a>
-      </section>
     </div>
     <div>
       <section id="inscription" class="deux centre">
@@ -67,6 +61,7 @@
       </section>
     </div>
     <div>
+      <!--Tableau-->
       <section id="stats" class="trois centre">
         <h1>Statistiques</h1>
         <a href="#">Accueil</a>
@@ -142,32 +137,37 @@
       </section>
     </div>
     <div>
+      <!--Articles-->
       <section id="article" class="quatre centre">
         <h1>Articles</h1>
         <a href="#">Accueil</a>
         <section class="section__article">
           <article>
             <figure class="fig__article">
+              <h3>Article 1</h3>
               <img src="images/caufield.jpg" alt="" class="img__article" />
               <figcaption class="caption__article">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Eaque deserunt voluptatibus cupiditate neque delectus officia, qui illum ab alias, dolorem, laborum iure reprehenderit sunt ex recusandae ducimus odit esse natus?</figcaption>
             </figure>
           </article>
           <article>
             <figure class="fig__article reverse">
+              <h3>Article 2</h3>
               <img src="images/def.jpg" alt="" class="img__article" />
-              <figcaption class="caption__article">Lorem ipsum dolor, sit amet consectetur adipisicing elit.</figcaption>
+              <figcaption class="caption__article">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quas placeat nihil odio cum tempore quod ducimus unde magnam fuga exercitationem. Dolore, perspiciatis? Repellendus vel minus dolorem reiciendis architecto. Perferendis, sit?</figcaption>
             </figure>
           </article>
           <article>
             <figure class="fig__article">
+              <h3>Article 3</h3>
               <img src="images/newhook.jpg" alt="" class="img__article" />
-              <figcaption class="caption__article">Lorem ipsum dolor, sit amet consectetur adipisicing elit.</figcaption>
+              <figcaption class="caption__article">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Adipisci mollitia aliquam rerum soluta asperiores, illo accusamus et ut! Architecto et nam, tempore ut adipisci suscipit quo cupiditate deleniti non explicabo!</figcaption>
             </figure>
           </article>
           <article>
             <figure class="fig__article reverse">
+              <h3>Article 4</h3>
               <img src="images/finSaison.jpg" alt="" class="img__article" />
-              <figcaption class="caption__article">Lorem ipsum dolor, sit amet consectetur adipisicing elit.</figcaption>
+              <figcaption class="caption__article">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quae accusantium molestiae dolorem velit, sequi voluptatum et ab sapiente dignissimos soluta obcaecati ea, laudantium porro magni itaque ipsum id sit eaque.</figcaption>
             </figure>
           </article>
         </section>
@@ -177,12 +177,59 @@
       <section id="video" class="quatre centre">
         <h1>Vidéos</h1>
         <a href="#">Accueil</a>
+        <div class="video">
+          <iframe
+            width="50%"
+            height="315"
+            src="https://www.youtube.com/embed/GV_lAD-OqmY?si=O9YInch9ua-UJQq-"
+            title="YouTube video player"
+            frameborder="0"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+            referrerpolicy="strict-origin-when-cross-origin"
+            allowfullscreen
+          ></iframe>
+          <iframe
+            width="50%"
+            height="315"
+            src="https://www.youtube.com/embed/8UPGigds_j4?si=W4H-Cj27yQ62oIx0"
+            title="YouTube video player"
+            frameborder="0"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+            referrerpolicy="strict-origin-when-cross-origin"
+            allowfullscreen
+          ></iframe>
+          <iframe
+            width="50%"
+            height="315"
+            src="https://www.youtube.com/embed/1TwMgsQInVY?si=YhtUmNaysv6W_78f"
+            title="YouTube video player"
+            frameborder="0"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+            referrerpolicy="strict-origin-when-cross-origin"
+            allowfullscreen
+          ></iframe>
+        </div>
       </section>
     </div>
+    <!--Galerie-->
     <div>
       <section id="galerie" class="quatre centre">
         <h1>Galerie</h1>
         <a href="#">Accueil</a>
+        <div class="galerie">
+          <img src="images/galerie/nick.jpg" alt="Nick Suzuki" class="img__galerie" />
+          <img src="images/galerie/cole.jpg" alt="Cole Caufield" class="img__galerie" />
+          <img src="images/galerie/hutson.jpg" alt="Lane Hutson" class="img__galerie" />
+          <img src="images/galerie/demi.jpg" alt="Ivan Demidov" class="img__galerie" />
+          <img src="images/galerie/slaf.jpg" alt="Juraj Slafkovsky" class="img__galerie" />
+          <img src="images/galerie/guhle.jpg" alt="Kaiden Guhle" class="img__galerie" />
+          <img src="images/galerie/dobson.jpg" alt="Noah Dobson" class="img__galerie" />
+          <img src="images/galerie/arber.jpg" alt="Arber Xhekaj" class="img__galerie" />
+          <img src="images/galerie/anderson.jpg" alt="Josh Anderson" class="img__galerie" />
+          <img src="images/galerie/florian.jpeg" alt="Florian Xhekaj" class="img__galerie" />
+          <img src="images/galerie/dobes.jpg" alt="Jakub Dobes" class="img__galerie" />
+          <img src="images/galerie/gallagher.jpg" alt="Brendan Gallagher" class="img__galerie" />
+        </div>
       </section>
     </div>
     <footer>

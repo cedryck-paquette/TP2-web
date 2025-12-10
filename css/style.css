@@ -112,7 +112,36 @@ article {
 .caption__article {
   width: 48%;
 }
+/*VIDEOS*/
+.video {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+}
 
+iframe {
+  padding: 20px;
+}
+/*GALERIE*/
+
+.galerie {
+  justify-content: center;
+  padding: 15px;
+}
+
+.img__galerie {
+  filter: grayscale(100%);
+  transform: scale(90%);
+  width: 33%;
+  height: 290px;
+  object-fit: cover;
+  transition: 0.2s;
+}
+
+.img__galerie:hover {
+  filter: grayscale(0%);
+  transform: scale(100%);
+}
 /*pied de page*/
 footer {
   height: 500px;
