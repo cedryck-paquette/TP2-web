@@ -79,7 +79,7 @@ figure > img {
 
 /*ARTICLES*/
 .section__article {
-  height: 1000px;
+  height: 82%;
   display: flex;
   justify-content: space-between;
   align-content: space-between;
@@ -87,9 +87,9 @@ figure > img {
 }
 article {
   margin: 10px;
-  padding: 10px;
+  padding: 5px;
   width: 100%;
-  height: 28%;
+  height: 25%;
   background-color: rgba(255, 255, 255, 0.32);
 }
 
@@ -98,7 +98,7 @@ article {
   justify-content: space-between;
   width: 90%;
   height: 90%;
-  gap: 15px;
+  gap: 5px;
 }
 
 .reverse {
@@ -107,6 +107,8 @@ article {
 
 .img__article {
   width: 48%;
+  object-fit: cover;
+  object-position: 0px 0px;
 }
 
 .caption__article {
@@ -138,10 +140,11 @@ iframe:hover {
 }
 
 .img__galerie {
+
   filter: grayscale(100%);
   transform: scale(90%);
   width: 33%;
-  height: 290px;
+  height: 200px;
   object-fit: cover;
   transition: 0.2s;
 }
