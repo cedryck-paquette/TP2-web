@@ -1,0 +1,107 @@
+/*FONTS*/
+@font-face {
+  font-family: "Dynapuff";
+  src: url(../fonts/Dynapuff/DynaPuff-Regular.ttf);
+}
+
+#recette {
+  h1,
+  h2,
+  h3 {
+    font-family: "Dynapuff";
+  }
+  font-family: "Montserrat";
+  line-height: 20px;
+  background-color: rgba(255, 255, 255, 0.491);
+  min-height: fit-content;
+}
+
+/*article*/
+.recette {
+  background-color: rgba(255, 255, 255, 0);
+  padding: 0px;
+  display: flex;
+  flex-wrap: wrap;
+  width: 100%;
+  min-height: fit-content;
+  border-bottom: 10px dotted rgb(185, 185, 185);
+  padding: 10px;
+  flex-wrap: wrap;
+  min-width: 90%;
+}
+
+/*direction pour alterner images*/
+.recette:nth-of-type(odd) {
+  flex-direction: row-reverse;
+}
+
+/*dimensions divisions*/
+.recette__div {
+  max-width: 33%;
+  min-width: 350px;
+  max-height: fit-content;
+}
+
+.recette__image {
+  width: 33%;
+  min-width: 350px;
+}
+
+/*figures et images*/
+.recette__figure {
+  border: 3px solid rgb(185, 185, 185);
+  padding: 5px;
+}
+
+.recette__img,
+.recette__figcaption {
+  padding: 5px;
+}
+.recette__figcaption {
+  background-color: rgba(0, 0, 0, 0.078);
+  text-align: center;
+  font-weight: bold;
+  font-size: 20px;
+}
+
+/*angle images et transition sur hover*/
+.recette:nth-of-type(odd) {
+  .recette__figure {
+    transition: 0.2s;
+    transform: rotate(-5deg);
+  }
+  .recette__figure:hover {
+    transform: rotate(0deg);
+  }
+}
+
+.recette:nth-of-type(even) {
+  .recette__figure {
+    transition: 0.2s;
+    transform: rotate(5deg);
+  }
+  .recette__figure:hover {
+    transform: rotate(0deg);
+  }
+}
+
+/*BOUTON HOME*/
+
+.bouton__home {
+  object-fit: contain;
+  position: fixed;
+  height: 20px;
+  width: 20px;
+  bottom: 50px;
+  right: 50px;
+}
+
+.img__home {
+  width: 50px;
+  transition: 0.2s;
+  filter: hue-rotate(200deg);
+}
+
+.img__home:hover {
+  filter: hue-rotate(0deg);
+}
